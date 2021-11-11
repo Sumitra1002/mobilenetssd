@@ -151,6 +151,8 @@ def event_handle(event):
         msg = str(event["message"]["text"])
         if (msg == "สวัสดี") :
             replyObj = TextSendMessage(text="ดีจ้าพส.")
+        elif (msg == "กินข้าวยังพส.??" :
+            replyObj = TextSendMessage(text="ยังเลยแม่TT") 
         else :    
         replyObj = TextSendMessage(text=msg)
         line_bot_api.reply_message(rtoken, replyObj)
